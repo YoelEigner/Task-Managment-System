@@ -1,6 +1,6 @@
 # Task Management System
 
-This is a Task Management System application that allows users to manage tasks with CRUD (Create, Read, Update, Delete) operations. It is built with React, Redux, and Bootstrap.
+This is a Task Management System application that allows users to manage tasks with CRUD (Create, Read, Update) operations. It is built with React, Redux, and Bootstrap.
 
 ## Features
 - Add new tasks.
