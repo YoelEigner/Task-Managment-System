@@ -1,39 +1,53 @@
-# YoelEigner's Tasks
+# Task Management System
 
-Welcome to YoelEigner's Tasks repository! This repository contains a list of tasks and challenges completed by YoelEigner.
+This is a Task Management System application that allows users to manage tasks with CRUD (Create, Read, Update, Delete) operations. It is built with React, Redux, and Bootstrap.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Building the App](#building-the-app)
-- [License](#license)
+## Features
+- Add new tasks.
+- View a list of current tasks.
+- Update existing tasks.
+- State is managed with Redux and persisted in local storage.
+- Communicates with a server to persist tasks across sessions.
 
 ## Installation
 
-To clone this repository to your local machine, use the following command in your terminal:
+Before starting, ensure you have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed on your system.
 
-```sh
-git clone https://github.com/YoelEigner/tasks.git
+1. Clone this repository: 
+```bash
+git clone https://github.com/YoelEigner/Task-Managment-System.git
+```
+2. Navigate into the project directory:
+
+```bash
+cd Task-Managment-System
+```
+3. Install the dependencies:
+```bash
+npm i
 ```
 
-# Usage
-This repository is mainly for reference purposes, to showcase the completed tasks and challenges by YoelEigner. To run the app after cloning it, navigate to the project's directory in your terminal and run the following commands:
+## Running the Application
 
-```sh
-npm install
+To start the application in development mode, run:
+
+```bash
 npm start
 ```
 
-The first command will install all the dependencies required by the app, and the second command will start the development server. Once the server is running, you can open your browser and go to http://localhost:3000 to view the app.
+The application will start on [http://localhost:3000](http://localhost:3000) by default.
 
-# Building the App
-If you want to build the app for production, run the following command:
+The apps endpoints are:
 
-```sh
-npm run build
-```
-This will create an optimized production build of the app in the build directory.
+- GET `http://localhost:3001/api/tasks/{id}`: Fetch a task by id.
+- POST `http://localhost:3001/api/tasks/`: Create a new task.
+- PUT `http://localhost:3001/api/tasks/{id}`: Update an existing task.
 
-# License
-This project is licensed under the MIT License. See the LICENSE file for details.
+You can find the backend API [on the task-api repo](https://github.com/YoelEigner/task-api) 
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
